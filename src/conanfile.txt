@@ -1,0 +1,11 @@
+[requires]
+ZenGitHub/1.0@jonico/stable
+libgit2/1.1.0
+openssl/1.1.1j
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my "bin" folder
